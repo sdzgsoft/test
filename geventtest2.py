@@ -6,6 +6,7 @@ def f(url):
 	resp=urllib2.urlopen(url)
 	data=resp.read()
 	print ('%d bytes received from %s' %(len(data),url))
+##添加注释
 gevent.joinall([
 	      gevent.spawn(f,'https://www.python.org/'),
 	      gevent.spawn(f,'https://www.sina.com.cn/'),
