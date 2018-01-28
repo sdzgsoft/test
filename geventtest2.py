@@ -1,6 +1,7 @@
 from gevent import monkey; monkey.patch_all()
 import gevent
 import urllib2
+#添加注释2
 def f(url):
 	print 'Get %s....'%url
 	resp=urllib2.urlopen(url)
